@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaliapedia</title>
+    <style>
+        body {
+            background-color: #e0f7ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            color: #001f3f;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .textbox-container {
+            position: relative;
+            width: 250px;
+            height: 350px;
+            margin: 20px;
+            background-color: #001f3f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, background-color 0.3s;
+            text-align: center;
+        }
+
+        .textbox-container:hover {
+            transform: scale(1.1);
+        }
+
+        .textbox-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: opacity 0.3s;
+        }
+
+        .textbox-container .hover-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            display: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .textbox-container.clicked img {
+            opacity: 0;
+        }
+
+        .textbox-container.clicked .hover-text {
+            display: block;
+            background-color: #001f3f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ANIMALIAPEDIA</h1>
+
+    <div class="container">
+        <div class="textbox-container" onclick="toggleHover(this)">
+            <img src="https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 1">
+            <div class="hover-text">Detailed information about Image 1.</div>
+        </div>
+
+        <div class="textbox-container" onclick="toggleHover(this)">
+            <img src="https://images.pexels.com/photos/62289/yemen-chameleon-chamaeleo-calyptratus-chameleon-reptile-62289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 2">
+            <div class="hover-text">Detailed information about Image 2.</div>
+        </div>
+
+        <div class="textbox-container" onclick="toggleHover(this)">
+            <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 3">
+            <div class="hover-text">Detailed information about Image 3.</div>
+        </div>
+
+        <div class="textbox-container" onclick="toggleHover(this)">
+            <img src="https://images.pexels.com/photos/17811/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 4">
+            <div class="hover-text">Detailed information about Image 4.</div>
+        </div>
+
+        <div class="textbox-container" onclick="toggleHover(this)">
+            <img src="https://images.pexels.com/photos/162203/panthera-tigris-altaica-tiger-siberian-amurtiger-162203.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 5">
+            <div class="hover-text">Detailed information about Image 5.</div>
+        </div>
+
+        <div class="textbox-container" onclick="toggleHover(this)">
+            <img src="https://images.pexels.com/photos/326012/pexels-photo-326012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 6">
+            <div class="hover-text">Detailed information about Image 6.</div>
+        </div>
+
+        <div class="textbox-container" onclick="toggleHover(this)">
+            <img src="https://images.pexels.com/photos/1076758/pexels-photo-1076758.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 7">
+            <div class="hover-text">Detailed information about Image 7.</div>
+        </div>
+
+        <div class="textbox-container" onclick="toggleHover(this)">
+            <img src="https://images.pexels.com/photos/2295744/pexels-photo-2295744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 8">
+            <div class="hover-text">Detailed information about Image 8.</div>
+        </div>
+
+        <div class="textbox-container" onclick="toggleHover(this)">
+            <img src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 9">
+            <div class="hover-text">Detailed information about Image 9.</div>
+        </div>
+
+        <div class="textbox-container" onclick="toggleHover(this)">
+            <img src="https://images.pexels.com/photos/73825/osprey-adler-bird-of-prey-raptor-73825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 10">
+            <div class="hover-text">Detailed information about Image 10.</div>
+        </div>
+
+        <div class="textbox-container" onclick="toggleHover(this)">
+            <img src="https://images.pexels.com/photos/106686/pexels-photo-106686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 11">
+            <div class="hover-text">Detailed information about Image 11.</div>
+        </div>
+
+        <div class="textbox-container" onclick="toggleHover(this)">
+            <img src="https://images.pexels.com/photos/638738/pexels-photo-638738.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 12">
+            <div class="hover-text">Detailed information about Image 12.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleHover(element) {
+            element.classList.toggle('clicked');
+        }
+    </script>
+
+</body>
+</html>
